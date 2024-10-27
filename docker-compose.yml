@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: C:\Users\alexc\WebstormProjects\ediscovery\Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      - NODE_ENV=development

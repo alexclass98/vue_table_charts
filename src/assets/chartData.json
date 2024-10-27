@@ -1,0 +1,17 @@
+{
+  "labels": ["January", "February", "March", "April", "May", "June", "July"],
+  "datasets": [
+    {
+      "label": "Dataset 1",
+      "backgroundColor": "#007bff",
+      "borderColor": "#007bff",
+      "data": [65, 59, 80, 81, 56, 55, 40]
+    },
+    {
+      "label": "Dataset 2",
+      "backgroundColor": "#28a745",
+      "borderColor": "#28a745",
+      "data": [28, 48, 40, 19, 86, 27, 90]
+    }
+  ]
+}

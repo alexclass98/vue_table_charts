@@ -1,0 +1,71 @@
+{
+  "edges": [
+    {
+      "from": "Роман Богданов",
+      "to": "AGMC - Amour Gold Mining Company",
+      "fromType": "PERSON",
+      "toType": "ORG",
+      "caseId": "67190f8849a7780ac9c6df08",
+      "weight": 2
+    },
+    {
+      "from": "Роман Богданов",
+      "to": "CFT (Computer Forensics Team)",
+      "fromType": "PERSON",
+      "toType": "ORG",
+      "caseId": "67190f8849a7780ac9c6df08",
+      "weight": 2
+    },
+    {
+      "from": "Роман Богданов",
+      "to": "DKPY",
+      "fromType": "PERSON",
+      "toType": "ORG",
+      "caseId": "67190f8849a7780ac9c6df08",
+      "weight": 2
+    },
+    {
+      "from": "Роман Богданов",
+      "to": "F&amp;I (Forensic and Investigation)",
+      "fromType": "PERSON",
+      "toType": "ORG",
+      "caseId": "67190f8849a7780ac9c6df08",
+      "weight": 2
+    },
+    {
+      "from": "Роман Богданов",
+      "to": "HR",
+      "fromType": "PERSON",
+      "toType": "ORG",
+      "caseId": "67190f8849a7780ac9c6df08",
+      "weight": 2
+    },
+    {
+      "from": "Роман Богданов",
+      "to": "вконтакте",
+      "fromType": "PERSON",
+      "toType": "ORG",
+      "caseId": "67190f8849a7780ac9c6df08",
+      "weight": 2
+    },
+    {
+      "from": "Роман Богданов",
+      "to": "FUN &amp",
+      "fromType": "PERSON",
+      "toType": "ORG",
+      "caseId": "67190f8849a7780ac9c6df08",
+      "weight": 1
+    },
+    {
+      "from": "Роман Богданов",
+      "to": "GAMES",
+      "fromType": "PERSON",
+      "toType": "ORG",
+      "caseId": "67190f8849a7780ac9c6df08",
+      "weight": 1
+    }
+  ],
+  "caseId": "67190f8849a7780ac9c6df08",
+  "total": 8,
+  "limit": 100
+}
