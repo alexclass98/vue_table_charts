@@ -21,6 +21,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .main-container {

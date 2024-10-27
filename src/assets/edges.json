@@ -1,0 +1,42 @@
+[
+  {
+    "from": "Роман Богданов",
+    "to": "AGMC - Amour Gold Mining Company",
+    "weight": 2
+  },
+  {
+    "from": "Роман Богданов",
+    "to": "CFT (Computer Forensics Team)",
+    "weight": 2
+  },
+  {
+    "from": "Роман Богданов",
+    "to": "DKPY",
+    "weight": 2
+  },
+  {
+    "from": "Роман Богданов",
+    "to": "F&I (Forensic and Investigation)",
+    "weight": 2
+  },
+  {
+    "from": "Роман Богданов",
+    "to": "HR",
+    "weight": 2
+  },
+  {
+    "from": "Роман Богданов",
+    "to": "вконтакте",
+    "weight": 2
+  },
+  {
+    "from": "Роман Богданов",
+    "to": "FUN &",
+    "weight": 1
+  },
+  {
+    "from": "Роман Богданов",
+    "to": "GAMES",
+    "weight": 1
+  }
+]

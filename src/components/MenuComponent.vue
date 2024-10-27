@@ -1,9 +1,13 @@
 <template>
   <div class="sidebar">
     <Menu :model="items" class="vertical-menu"
-          style="min-width: 120px; height: 100%;border-right: 1px solid lightgrey;}">
+          style="min-width: 120px; height: 100%; border-right: 1px solid lightgrey;">
       <template #item="{ item, props }">
-        <a v-bind="props.action" :class="{ 'active-menu-item': isActive(item.command) }">
+        <a
+            v-bind="props.action"
+            :class="{ 'active-menu-item': isActive(item.command) }"
+            :style="{ backgroundColor: isActive(item.command) ? '#f0f0f0' : 'transparent' }"
+        >
           <span :class="item.icon"></span>
           <span>{{ item.label }}</span>
         </a>
@@ -15,7 +19,7 @@
 <script setup>
 import {ref} from 'vue';
 import Menu from 'primevue/menu';
-import {useRouter} from 'vue-router';
+import {useRouter, useRoute} from 'vue-router';
 import 'primeicons/primeicons.css';
 
 const items = ref([
@@ -25,13 +29,15 @@ const items = ref([
 ]);
 
 const router = useRouter();
+const route = useRoute();
 
-const navigateTo = (route) => {
-  router.push(route);
+const navigateTo = (routePath) => {
+  router.push(routePath);
 };
 
-const isActive = (route) => {
-  return router.currentRoute.value.path === route;
+const isActive = (command) => {
+  const path = command.toString().match(/'(.*)'/)[1];
+  return route.path === path;
 };
 </script>
 
@@ -44,19 +50,19 @@ const isActive = (route) => {
   width: 100%;
 }
 
-.active-menu-item {
-  background-color: #007bff;
-  color: white;
-}
-
 .vertical-menu a {
-  padding: 10px;
+  padding: 10px 20px;
   gap: 4px;
   display: flex;
   align-items: center;
 }
 
 .vertical-menu a:hover {
-  background-color: #f0f0f0; /* Цвет при наведении */
+  background-color: #f0f0f0;
+}
+
+.active-menu-item {
+  background-color: #f0f0f0;
+  color: white;
 }
 </style>

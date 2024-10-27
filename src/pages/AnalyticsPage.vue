@@ -11,35 +11,40 @@
     />
 
     <div v-if="selectedChart === 'line'">
-      <LineChartComponent />
+      <LineChartComponent/>
     </div>
     <div v-else-if="selectedChart === 'lineWeather'">
-      <LineChartWeather />
+      <LineChartWeather/>
     </div>
     <div v-else-if="selectedChart === 'pie'">
-      <PieChart />
+      <PieChart/>
     </div>
     <div v-else-if="selectedChart === 'bar'">
-      <BarChart />
+      <BarChart/>
+    </div>
+    <div v-else-if="selectedChart === 'graph'">
+      <Graph/>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import {ref} from 'vue';
 import Select from 'primevue/select';
 import LineChartComponent from '../components/charts/LineChartComponent.vue';
 import LineChartWeather from '../components/charts/LineChartWeather.vue';
 import PieChart from '../components/charts/PieChart.vue';
 import BarChart from '../components/charts/BarChart.vue';
+import Graph from "../components/charts/Graph.vue";
 
 const selectedChart = ref('line');
 
 const chartOptions = [
-  { label: 'Line Chart', value: 'line' },
-  { label: 'Line Chart Weather', value: 'lineWeather' },
-  { label: 'Pie Chart', value: 'pie' },
-  { label: 'Bar Chart', value: 'bar' }
+  {label: 'Line Chart', value: 'line'},
+  {label: 'Line Chart Weather', value: 'lineWeather'},
+  {label: 'Pie Chart', value: 'pie'},
+  {label: 'Bar Chart', value: 'bar'},
+  {label: 'Graph', value: 'graph'}
 ];
 </script>
 
