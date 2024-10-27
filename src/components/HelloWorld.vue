@@ -23,7 +23,6 @@ const username = ref('Пользователь');
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
 }
 
 h1 {
